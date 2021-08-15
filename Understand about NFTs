@@ -1,4 +1,4 @@
->NFTs start with the ERC721 token standard, which has a similar syntax to that of ERC20s — with a few tweaks.
+>NFTs start with the ERC721 token standard, which has a similar syntax to that of ERC20s — with a few tweaks.>
 >In order for your contract to be considered an NFT, all it has to do is follow this standard. We make it easy by just importing the standard into our contracts so that we 
 >don’t have to reinvent the wheel every time we want to make a new one. See the code below for what I mean.
 >NFTs have a tokenURI variable that we will talk about in a minute, and they have a mapping of a tokenId to its owner, where each token has its own “owner.” 
