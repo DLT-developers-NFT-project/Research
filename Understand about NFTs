@@ -1,0 +1,21 @@
+>NFTs start with the ERC721 token standard, which has a similar syntax to that of ERC20s — with a few tweaks.
+In order for your contract to be considered an NFT, all it has to do is follow this standard. We make it easy by just importing the standard into our contracts so that we 
+don’t have to reinvent the wheel every time we want to make a new one. See the code below for what I mean.
+NFTs have a tokenURI variable that we will talk about in a minute, and they have a mapping of a tokenId to its owner, where each token has its own “owner.” 
+This differentiates them from the ERC20s, which only have a mapping of an address to a balance. ERC721s still let people transfer the tokens, set permissions on the tokens, and more. 
+It’s a lightweight standard by convention so that we can build whatever we want with them.
+Now here is where things get really different. Metadata. When you go on to OpenSea (a popular NFT marketplace), you can see a bunch of images. 
+Since NFTs are on the blockchain, all their data should be on-chain right? Well, not quite.
+Storing data on-chain can get really expensive, and art isn’t known for its small size. 
+Ethereum and smart contract developers realized that uploading even a 1MB image could break their bank accounts, so they wanted to come up with a way to display art 
+without having to upload the entire image.
+As a workaround, most NFTs have what’s called a tokenURI. 
+This is a globally unique identifier for all the image aspects of an NFT. This makes it easier to give NFTs visuals. 
+A URI is a Uniform Resource Identifier, which could be an HTTPS API call, something through IPFS, or some other type of unique identifier. This metadata looks like this:
+
+They are JSON files that have:
+name
+description
+image
+attributes
+These are generally stored in an API or on IPFS.>
