@@ -14,3 +14,4 @@
 https://www.markdownguide.org/getting-started/
 https://askwonder.com/research/nft-market-research-3ymeht7fp
 https://www.youtube.com/watch?v=p36tXHX1JD8
+https://docs.openzeppelin.com/contracts/4.x/erc721
